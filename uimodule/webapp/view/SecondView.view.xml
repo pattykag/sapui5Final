@@ -1,0 +1,55 @@
+<mvc:View controllerName="com.curso.final.controller.SecondView" displayBlock="true"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>tablePageTitle}">
+		<content>
+
+			<Table id="idProductsTable" inset="false" items="{modelProducts>/value}">
+				<headerToolbar>
+					<OverflowToolbar>
+						<content>
+							<Title text="{i18n>tableTitle}" level="H2"/>
+							<ToolbarSpacer />
+							<Toolbar>
+								<SearchField id="idSearch" width="100%" liveChange="onSearch" />
+								<Button tooltip="{i18n>sort}" icon="sap-icon://sort" press="onSort" />
+								<Button tooltip="{i18n>filter}" icon="sap-icon://filter" press="onFilter" />
+								<Button tooltip="{i18n>clear}" icon="sap-icon://clear-filter" press="onClearFilter" />
+							</Toolbar>
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="12em">
+						<Text text="{i18n>productID}" />
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="{i18n>internalID}" />
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Left">
+						<Text text="{i18n>creationDate}" />
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+						<Text text="{i18n>origin}" />
+					</Column>
+					<Column hAlign="Left">
+						<Text text="{i18n>enterpriseID}" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier text="{modelProducts>codigo_producto}"/>
+							<ObjectNumber number="{modelProducts>cod_interno}" state="{path: 'modelProducts>cod_interno', formatter: '.formatter.statusColor'}" />
+							<Text text="{path: 'modelProducts>fecha_creacion', formatter: '.formatter.formatISODatetoLocaleDateString'}" />
+							<Text text="{modelProducts>origen}" />
+							<Text text="{modelProducts>nombre_empresa}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			<Button id="idBack" icon="sap-icon://arrow-left" type="Default" text="Back" press="onNavigateBack"></Button>
+		</content>
+	</Page>
+</mvc:View>

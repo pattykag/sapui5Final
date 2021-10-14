@@ -1,0 +1,31 @@
+<mvc:View controllerName="com.curso.final.controller.Main" displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:l="sap.ui.layout">
+  <Page title="{i18n>titleFist}">
+    <content>
+
+      <l:VerticalLayout class="sapUiContentPadding" width="100%">
+        <Label text="{i18n>name}" />
+        <Input id="inputName" placeholder="{i18n>namePlaceHolder}" showSuggestion="true">
+        </Input>
+
+        <Label text="{i18n>lastname}" />
+        <Input id="inputLastname" placeholder="{i18n>lastnamePlaceHolder}" showSuggestion="true"></Input>
+
+        <Label text="{i18n>dni}" />
+        <Input id="inputDni" placeholder="{i18n>dniPlaceHolder}" showSuggestion="true"></Input>
+
+        <Label text="{i18n>birthdate}" />
+        <DatePicker id="inputBirthdate" placeholder="{i18n>birthdatePlaceHolder}" change="handleChange" class="sapUiSmallMarginBottom"/>
+        <Button text="{i18n>save}" icon="sap-icon://save" press="onPressSave" />
+      </l:VerticalLayout>
+      <Panel id="panel" expandable="true" headerText="{i18n>nextStep}" width="auto" class="sapUiResponsiveMargin">
+		<content>
+			<Button id="buttonModel" icon="sap-icon://show" text="{i18n>buttonModel}" visible="false" press="onModelPress" ></Button>
+      <Button id="buttonDialog" icon="sap-icon://arrow-right" text="{i18n>buttonNext}" visible="false" press="onSecondView" ></Button>
+		</content>
+	</Panel>
+    </content>
+  </Page>
+</mvc:View>

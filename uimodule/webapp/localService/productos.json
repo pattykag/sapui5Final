@@ -1,0 +1,48 @@
+{
+    "value": [{
+            "codigo_producto": "210605120522 1",
+            "cod_interno": "1000",
+            "fecha_creacion": "2020-11-20T03:00:00.000Z",
+            "fecha_vencimiento": "2020-12-31T03:00:00.000Z",
+            "desc_producto": "Producto 1",
+            "nombre_empresa": "CLIENTE Producto 1",
+            "origen": "Argentina"
+        },
+        {
+            "codigo_producto": "210132099429 2",
+            "cod_interno": "2000",
+            "fecha_creacion": "2020-11-20T03:00:00.000Z",
+            "fecha_vencimiento": "2020-12-31T03:00:00.000Z",
+            "desc_producto": "Producto 2",
+            "nombre_empresa": "CLIENTE Producto 2",
+            "origen": "Chile"
+        },
+        {
+            "codigo_producto": "210131354329 3",
+            "cod_interno": "1000",
+            "fecha_creacion": "2020-11-28T03:00:00.000Z",
+            "fecha_vencimiento": "2021-01-29T03:00:00.000Z",
+            "desc_producto": "Producto 3",
+            "nombre_empresa": "CLIENTE Producto 3",
+            "origen": "Chile"
+        },
+        {
+            "codigo_producto": "134232011342 4",
+            "cod_interno": "2000",
+            "fecha_creacion": "2020-09-20T03:00:00.000Z",
+            "fecha_vencimiento": "2020-11-30T03:00:00.000Z",
+            "desc_producto": "Producto 4",
+            "nombre_empresa": "CLIENTE Producto 4",
+            "origen": "Mexico"
+        },
+        {
+            "codigo_producto": "109832031429 5",
+            "cod_interno": "3000",
+            "fecha_creacion": "2020-11-20T03:00:00.000Z",
+            "fecha_vencimiento": "2020-12-31T03:00:00.000Z",
+            "desc_producto": "Producto 5",
+            "nombre_empresa": "CLIENTE Producto 5",
+            "origen": "Argentina"
+        }
+    ]
+}

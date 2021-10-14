@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <ViewSettingsDialog confirm="onSortDialogConfirm">
+        <sortItems>
+            <ViewSettingsItem text="{i18n>productID}" key="codigo_producto" selected="true"/>
+            <ViewSettingsItem text="{i18n>internalID}" key="cod_interno" />
+            <ViewSettingsItem text="{i18n>creationDate}" key="fecha_creacion" />
+            <ViewSettingsItem text="{i18n>origin}" key="origen" />
+            <ViewSettingsItem text="{i18n>enterpriseID}" key="nombre_empresa" />
+        </sortItems>
+    </ViewSettingsDialog>
+</core:FragmentDefinition>
